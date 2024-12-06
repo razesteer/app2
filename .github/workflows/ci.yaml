@@ -49,7 +49,7 @@ jobs:
       - name: Update Image Tag in Values File
         run: |
           cd helm-chart/values
-          yq -i '.image.tag = "${{ env.TAG }}"' app1.yaml
+          yq -i '.image.tag = "${{ env.TAG }}"' app2.yaml
 
       - name: Commit and Push Changes
         run: |
